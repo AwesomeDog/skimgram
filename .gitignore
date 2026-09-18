@@ -1,0 +1,8 @@
+node_modules/
+.output/
+.wxt/
+coverage/
+.idea/
+public/icon/*.png
+*.zip
+.DS_Store

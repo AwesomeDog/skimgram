@@ -1,0 +1,5 @@
+/* The panel brings its own background; this only takes the page margin out of the popup. */
+html,
+body {
+  margin: 0;
+}
