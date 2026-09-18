@@ -20,8 +20,7 @@
     "postinstall": "wxt prepare",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "smoke": "wxt build && node scripts/smoke.mjs",
-    "bump": "node scripts/bump.mjs"
+    "smoke": "wxt build && node scripts/smoke.mjs"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",

@@ -303,9 +303,10 @@ Drag that file onto a browser window to install your own build.
 
 ### 5. Cutting a release (maintainers)
 
-`npm run bump -- patch|minor|major` bumps the version and tags `vX.Y.Z`; push it with
-`git push --follow-tags` when you are ready. CI builds the script and attaches
-`skimgram.user.js` to the release at that tag — that is where the link above points.
+```bash
+npm version patch      # or minor / major; commits and tags vX.Y.Z
+git push --follow-tags
+```
 
 ---
 
@@ -505,7 +506,6 @@ scripts/
   frequency-plugin.ts   serves the word lists as a virtual module
   gen-icons.mjs         renders icon/<size>-{off,on}.png from the SVGs
   smoke.mjs             end-to-end run against a real Chromium
-  bump.mjs              version bump, commit and tag
 ```
 
 `core/` and `dom/` know nothing about either surface. `panel/` is mounted twice: the
